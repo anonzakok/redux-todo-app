@@ -12,6 +12,7 @@ const todoSlice = createSlice({
       state.todoList.push(action.payload);
     },
     setCheck: (state, action) => {
+      // eslint-disable-next-line
       state.todoList.map((item) => {
         if (action.payload === item.id) {
           if (item.done === true) {
